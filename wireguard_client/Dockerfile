@@ -8,6 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 # hadolint ignore=DL3003
 RUN \
+    apk upgrade && \
     apk add --no-cache \
     openresolv \
     iptables \
