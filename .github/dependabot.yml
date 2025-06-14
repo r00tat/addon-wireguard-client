@@ -1,0 +1,12 @@
+# .github/dependabot.yml
+# Basic Dependabot configuration for a Dockerfile
+
+version: 2
+updates:
+  # Enable version updates for Docker
+  - package-ecosystem: "docker"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/wireguard_client"
+    # Check for updates every day
+    schedule:
+      interval: "weekly"
